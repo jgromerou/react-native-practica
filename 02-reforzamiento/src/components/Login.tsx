@@ -7,7 +7,7 @@ interface AuthState {
   nombre: string;
 }
 
-const initialState = {
+const initialState: AuthState = {
   validando: true,
   token: null,
   username: '',
