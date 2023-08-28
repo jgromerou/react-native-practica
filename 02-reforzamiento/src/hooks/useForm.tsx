@@ -5,7 +5,7 @@ export const useForm = <T extends Object>(formulario: T) => {
 
   const onChange = (value: string, campo: keyof T) => {
     setState({
-      ...formulario,
+      ...state,
       [campo]: value,
     });
   };
